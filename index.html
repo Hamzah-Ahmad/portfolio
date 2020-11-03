@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Hamzah Ahmad</title>
   </head>
@@ -299,10 +300,10 @@
 
       <!-- TECH STACK SECTION -->
       <section id="tech-stack-section">
-        <div id="tech-stack-heading">My Tech Stack</div>
+        <div id="sub-heading" data-aos="fade">My Development Stack</div>
         <div id="tech-stack-list">
           <!-- JavaScript -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">JavaScript</span>
             <span class="tech-img-span">
               <img
@@ -312,7 +313,7 @@
             </span>
           </span>
           <!-- TypeScript -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">TypeScript</span>
 
             <span class="tech-img-span">
@@ -323,7 +324,7 @@
             </span>
           </span>
           <!-- React -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">React</span>
 
             <span class="tech-img-span">
@@ -331,7 +332,7 @@
             </span>
           </span>
           <!-- Redux -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Redux</span>
 
             <span class="tech-img-span">
@@ -339,14 +340,14 @@
             </span>
           </span>
           <!-- Node -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Node</span>
             <span class="tech-img-span">
               <img class="tech-stack-item-img" src="./images/node-js.png" />
             </span>
           </span>
           <!-- Express -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Express</span>
 
             <span class="tech-img-span">
@@ -358,19 +359,19 @@
             </span>
           </span>
           <!-- Mongo -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">MongoDB</span>
 
             <span class="tech-img-span">
               <img
                 class="tech-stack-item-img"
                 src="./images/mongodb.png"
-                style="padding-top: 30px; width: 190px"
+                style="padding-top: 30px; width: 150px"
               />
             </span>
           </span>
           <!-- GraphQL -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">GraphQL</span>
 
             <span class="tech-img-span">
@@ -381,7 +382,7 @@
             </span>
           </span>
           <!-- Apollo -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Apollo</span>
 
             <span class="tech-img-span">
@@ -394,7 +395,7 @@
           </span>
 
           <!-- HTML -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">HTML</span>
 
             <span class="tech-img-span">
@@ -402,7 +403,7 @@
             </span>
           </span>
           <!-- CSS -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">CSS</span>
 
             <span class="tech-img-span">
@@ -410,7 +411,7 @@
             </span>
           </span>
           <!-- Bootstrap -->
-          <span class="tech-list-item">
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Bootstrap</span>
 
             <span class="tech-img-span">
@@ -420,8 +421,8 @@
               />
             </span>
           </span>
-          <!-- Bootstrap -->
-          <span class="tech-list-item">
+          <!-- Material UI -->
+          <span data-aos="fade-up" class="tech-list-item">
             <span class="tech-stack-item-name">Material UI</span>
 
             <span class="tech-img-span">
@@ -433,12 +434,148 @@
           </span>
         </div>
       </section>
-    </div>
 
+      <!-- PROJECTS SECTION -->
+      <section id="project-section">
+        <div id="sub-heading" data-aos="fade">Projects I've Worked On</div>
+        <div id="project-list">
+          <!-- React Cart -->
+          <span class="project-list-item" data-aos="flip-down">
+            <img class="project-img" src="./images/ShoppingCart.png" />
+            <div class="project-info">
+              <p class="project-title">ReactCart</p>
+              <div class="project-icons-div">
+                <a
+                  class="project-icon"
+                  href="https://github.com/Hamzah-Ahmad/react-cart"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <a
+                  class="project-icon"
+                  href="https://react-shop-cart.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa fa-globe"></i>
+                </a>
+              </div>
+              <p class="project-item-subtext">Technologies Used:</p>
+              <hr class="horizontal-line" />
+              <div class="project-technology-list">
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">Redux</span>
+                <span class="project-tech-item">Reactstrap</span>
+              </div>
+            </div>
+          </span>
+          <!-- Connekt -->
+          <span class="project-list-item" data-aos="flip-down">
+            <img class="project-img" src="./images/Connekt.png" />
+            <div class="project-info">
+              <p class="project-title">
+                Connekt <span style="font-size: 13px">(Social Media)</span>
+              </p>
+              <div class="project-icons-div">
+                <a
+                  class="project-icon disable"
+                  target="_blank"
+                  onclick="return false;"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Sorry. This repository is currently private or unavailable."
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <a
+                  class="project-icon"
+                  href="https://serene-earth-75811.herokuapp.com"
+                  target="_blank"
+                >
+                  <i class="fa fa-globe"></i>
+                </a>
+              </div>
+              <p class="project-item-subtext">Technologies Used:</p>
+              <hr class="horizontal-line" />
+              <div class="project-technology-list">
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">Redux</span>
+                <span class="project-tech-item">Reactstrap</span>
+              </div>
+            </div>
+          </span>
+          <!-- Zayin -->
+          <span class="project-list-item" data-aos="flip-down">
+            <img class="project-img" src="./images/ShoppingCart.png" />
+            <div class="project-info">
+              <p class="project-title">
+                Zayin <span style="font-size: 13px">(Discussion Forum)</span>
+              </p>
+              <div class="project-icons-div">
+                <a
+                  class="project-icon"
+                  href="https://github.com/Hamzah-Ahmad/react-cart"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <a
+                  class="project-icon"
+                  href="https://react-shop-cart.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa fa-globe"></i>
+                </a>
+              </div>
+              <p class="project-item-subtext">Technologies Used:</p>
+              <hr class="horizontal-line" />
+              <div class="project-technology-list">
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">Redux</span>
+                <span class="project-tech-item">Reactstrap</span>
+              </div>
+            </div>
+          </span>
+          <!-- Mern Chat -->
+          <span class="project-list-item" data-aos="flip-down">
+            <img class="project-img" src="./images/MernChat.png" />
+            <div class="project-info">
+              <p class="project-title">MernChat</p>
+              <div class="project-icons-div">
+                <a
+                  class="project-icon"
+                  href="https://github.com/Hamzah-Ahmad/MERN_Chat"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <a
+                  class="project-icon"
+                  href="https://mern--chat.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa fa-globe"></i>
+                </a>
+              </div>
+              <p class="project-item-subtext">Technologies Used:</p>
+              <hr class="horizontal-line" />
+              <div class="project-technology-list">
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">Node.js</span>
+                <span class="project-tech-item">Express.js</span>
+                <span class="project-tech-item">Material UI</span>
+                <span class="project-tech-item">Socket.io</span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      let loaderWrapper = document.querySelector(".loader-wrapper");
-      window.addEventListener("load", function () {
-        loaderWrapper.classList.add("remove-loader");
+      AOS.init({
+        duration: 1200,
+        once: true,
       });
     </script>
   </body>
