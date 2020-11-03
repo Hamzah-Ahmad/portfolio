@@ -141,10 +141,9 @@ span.tech-list-item {
 /* MEDIA QUERIES */
 /* TABLET */
 @media (max-width: 768px) {
-  .container {
-    width: 85%;
-    margin: auto;
-  }
+  /* body {
+    display: none;
+  } */
   svg {
     display: none;
   }
@@ -154,11 +153,21 @@ span.tech-list-item {
   #hero-text-headline {
     font-size: 22px;
   }
+
+  #tech-stack-list {
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; */
+  }
 }
 /* MOBILE */
 @media (max-width: 500px) {
+  /* body {
+    display: none;
+  } */
   #hero-text {
-    font-size: 16px;
+    font-size: 15px;
   }
   #hero-text-headline {
     font-size: 20px;
