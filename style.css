@@ -245,26 +245,18 @@ span.project-list-item {
   font-size: 13px;
 }
 
-/* SVG */
-#Table {
-  animation: tableAnim 1.5s;
-}
-
-#Laptop {
-  animation: laptop 1.5s;
-}
-
-#Man,
-#Chair {
-  opacity: 0;
-  animation: man 1.5s linear 0.5s forwards;
-}
-
 /* FOOTER SECTION */
 #footer-section {
   margin-top: 30px;
   min-height: 90px;
-  background-color: var(--primary-color);
+
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021b79, #0575e6);
   color: var(--secondary-text-color);
 }
 
@@ -280,9 +272,9 @@ span.project-list-item {
   margin: 0px 10px;
 }
 
-.contact-icon:hover {
-  /* color: darkblue; */
-}
+/* .contact-icon:hover {
+  
+} */
 
 #footer-contact-info {
   text-align: center;
@@ -359,6 +351,113 @@ span.project-list-item {
     /* align-items: center;
   justify-content: center;
   flex-wrap: wrap; */
+  }
+}
+
+/* SVG */
+#Table {
+  animation: tableAnim 1.5s;
+}
+
+#Laptop {
+  animation: laptop 1.5s;
+}
+
+#Man,
+#Chair {
+  opacity: 0;
+  animation: man 1.5s linear 0.5s forwards;
+}
+
+#javascript {
+  opacity: 0;
+  animation: js-anim 6s ease-out 6s infinite;
+}
+#html {
+  opacity: 0;
+  animation: html-anim 5s ease-out 3s infinite;
+}
+
+#css {
+  opacity: 0;
+  animation: css-anim 6s ease-out 4s infinite;
+}
+
+#react {
+  opacity: 0;
+  animation: react-anim 7s ease-out 5s infinite;
+}
+
+@keyframes js-anim {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0%);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
+@keyframes react-anim {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
+@keyframes html-anim {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
+@keyframes css-anim {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
   }
 }
 
