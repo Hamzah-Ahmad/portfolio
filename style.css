@@ -58,9 +58,15 @@ img {
 }
 
 .navbar ul li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
   /* font-weight: 900; */
+}
+
+.navbar ul li a:hover {
+  /* color: #0575e6; */
+  font-weight: 900;
+  border-bottom: 1px solid #fff;
 }
 
 .navbar ul li a {
@@ -78,7 +84,7 @@ section {
 }
 
 /* HERO SECTION */
-#hero-section {
+#home {
   border-radius: 0 0 30rem 0rem;
   height: 100vh;
   /* align-items: center; */
@@ -116,6 +122,35 @@ section {
   font-weight: 900;
 }
 
+/* ABOUT ME SECTION */
+#about-me {
+  display: flex;
+  width: 82%;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
+#about-me-container {
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 2px 4px 10px #4a4a4a;
+  border-radius: 10px 10px 10px 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#about-me-text {
+  font-size: 18px;
+}
+
+.avatar-img {
+  display: block;
+  border-radius: 1000px;
+  min-width: 120px;
+  float: right;
+}
+
 /* TECH STACK SECTION*/
 /* .tech-img-span {
   padding: 0px;
@@ -126,14 +161,15 @@ section {
   padding-bottom: 10px;
 }
 
-#tech-stack-section {
-  margin-top: 40px;
+#tech-stack {
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
 #tech-stack-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 40px;
   /* align-items: center;
   justify-content: center;
   flex-wrap: wrap; */
@@ -164,6 +200,11 @@ span.tech-list-item {
 }
 
 /* PROJECTS SECTION */
+#projects {
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
 .horizontal-line {
   margin: 15px 0px;
   color: #f5f2f2;
@@ -190,6 +231,7 @@ span.project-list-item {
 .disable {
   opacity: 0.5;
 }
+
 .project-img {
   width: 300px;
   max-height: 150px;
@@ -207,6 +249,14 @@ span.project-list-item {
   margin-top: 10px;
   font-weight: light;
   cursor: pointer;
+}
+
+.project-icon:hover {
+  color: #0575e6;
+}
+
+a.disable {
+  pointer-events: none;
 }
 
 .project-title {
@@ -246,9 +296,9 @@ span.project-list-item {
 }
 
 /* FOOTER SECTION */
-#footer-section {
-  margin-top: 30px;
-  min-height: 90px;
+#contact-me {
+  margin-top: 100px;
+  min-height: 300px;
 
   background: #0575e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -263,24 +313,56 @@ span.project-list-item {
 #footer-text {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .contact-icon {
   font-size: 30px;
   color: white;
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 
-/* .contact-icon:hover {
-  
-} */
+.contact-icon:hover {
+  color: #479bff;
+}
 
 #footer-contact-info {
   text-align: center;
 }
 
+#footer-nav-links {
+  margin-top: 30px;
+}
+#footer-nav-links ul {
+  display: flex;
+  justify-content: center;
+}
+#footer-nav-links ul li {
+  margin: 20px;
+  list-style-type: none;
+}
+#footer-nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15x;
+}
+
+#footer-nav-links ul li a:hover {
+  /* color: #0575e6; */
+  font-weight: 900;
+  border-bottom: 1px solid #fff;
+}
+
 /* MEDIA QUERIES */
+/* Windowed-Desktop */
+@media (max-width: 780px) {
+  #hero-text-headline {
+    font-size: 18px;
+  }
+  #hero-text {
+    font-size: 16px;
+  }
+}
 /* TABLET */
 @media (max-width: 768px) {
   /* body {
@@ -324,16 +406,25 @@ span.project-list-item {
   #hero-text-headline {
     font-size: 20px;
   }
-  .navbar ul li {
-    margin: 0 0.5rem;
-    /* padding: 1rem; */
-  }
+
   .navbar ul {
-    justify-content: center;
+    justify-content: flex-start;
   }
+  .navbar ul li {
+    /* margin: 0;
+    padding: 0;
+    padding: 0.5rem; */
+    justify-content: space-around;
+
+    font-size: 11px;
+  }
+  /* .navbar ul li a {
+  
+  } */
 
   #tech-stack-list {
     grid-template-columns: 1fr 1fr;
+    gap: 0px;
   }
 
   span.tech-list-item {
@@ -352,6 +443,19 @@ span.project-list-item {
   justify-content: center;
   flex-wrap: wrap; */
   }
+
+  #sub-heading {
+    font-size: 25px;
+  }
+
+  #footer-nav-links ul li {
+    margin: 6px;
+    list-style-type: none;
+  }
+
+  #footer-nav-links ul li a {
+    font-size: 10px;
+  }
 }
 
 /* SVG */
@@ -366,7 +470,7 @@ span.project-list-item {
 #Man,
 #Chair {
   opacity: 0;
-  animation: man 1.5s linear 0.5s forwards;
+  animation: man 1.5s linear 1.2s forwards;
 }
 
 #javascript {
