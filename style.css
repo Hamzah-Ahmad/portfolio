@@ -104,7 +104,7 @@ nav ul {
 }
 
 nav.active {
-    width: 450px;
+    width: 350px;
 
 }
 
@@ -140,6 +140,9 @@ nav ul a {
     width: 30px;
 }
 
+nav.active .icon{
+  margin-right: 30px
+}
 
 .icon:focus {
     outline: 0;
@@ -558,7 +561,7 @@ a.disable {
   }
 
   #about-me {
-    width: 85vw;
+    width: 100vw;
   }
 }
 
