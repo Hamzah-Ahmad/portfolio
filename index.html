@@ -25,7 +25,7 @@
       </nav> -->
       <nav class="active" id="nav">
         <ul>
-          <li class="toggle"><a  href="#about-me">About</a></li>
+          <li class="toggle"><a id="firstNavLink"  href="#about-me">About</a></li>
           <li class="toggle"><a  href="#tech-stack">Stack</a></li>
           <li class="toggle"><a  href="#projects">Projects</a></li>
           <li class="toggle"><a  href="#contact-me">Contact</a></li>
@@ -794,11 +794,18 @@
     <script>
       const toggle = document.querySelectorAll('.toggle');
       const nav = document.querySelector('nav');
-      toggle.forEach(panel => {
-        console.log(panel)
-        panel.addEventListener('click', () => {
+      const firstNavLink = document.querySelector('#firstNavLink');
+      toggle.forEach(x => {
+        // console.log(x)
+        x.addEventListener('click', () => {
           nav.classList.toggle('active');
         })
+      })
+
+      firstNavLink.addEventListener('click', e => {
+        if(!nav.classList.contains('active')){
+          e.preventDefault();
+        }
       })
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
