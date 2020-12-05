@@ -13,12 +13,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--primary-text-color);
   background-color: #fff;
+  overflow-x: hidden;
+
 }
 img {
   width: 100px;
